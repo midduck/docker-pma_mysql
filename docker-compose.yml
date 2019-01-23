@@ -19,8 +19,8 @@ services:
       PMA_USER: root 
       PMA_PASSWORD: password 
     restart: always 
-    links: 
-      - mysql:mysql 
+    depends_on: 
+      - mysql 
     ports : 
       - "8080:80" 
     volumes: 
