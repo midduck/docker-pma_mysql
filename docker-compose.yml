@@ -6,7 +6,7 @@ services:
     environment: 
       -  MYSQL_ROOT_PASSWORD = password
   phpmyadmin: 
-    image:  phpmyadmin / phpmyadmin 
+    image:  phpmyadmin/phpmyadmin 
     environment: 
       PMA_ARBITRARY :  1 
       PMA_HOST: mysql 
