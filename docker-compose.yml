@@ -26,3 +26,6 @@ services:
     volumes: 
       - mysql-data:/lib/mysql
 
+volumes: 
+  mysql-data: 
+    driver: local
