@@ -6,7 +6,7 @@ services:
     environment: 
       -  MYSQL_ROOT_PASSWORD = password
   phpmyadmin: 
-    image:  phpmyadmin/phpmyadmin 
+    image: phpmyadmin/phpmyadmin 
     environment: 
       PMA_ARBITRARY :  1 
       PMA_HOST: mysql 
@@ -14,11 +14,11 @@ services:
       PMA_PASSWORD: password 
     restart: always 
     links: 
-      - mysql: mysql 
+      - mysql:mysql 
     ports : 
       - 8080:80 
-    volumes : 
-      - mysql-data : /lib/mysql
+    volumes: 
+      - mysql-data:/lib/mysql
 
 volumes: 
   mysql-data: 
