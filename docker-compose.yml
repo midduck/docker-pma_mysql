@@ -12,6 +12,7 @@ services:
     image: phpmyadmin/phpmyadmin 
     environment: 
       PMA_HOST: mysql 
+      MYSQL_ROOT_PASSWORD: password
     restart: always 
     depends_on: 
       - mysql 
