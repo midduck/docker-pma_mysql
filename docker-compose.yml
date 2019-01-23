@@ -5,7 +5,9 @@ services:
     image: mysql 
     restart: always
     environment: 
-      - MYSQL_ROOT_PASSWORD=password
+      MYSQL_USER: root
+      MYSQL_PASSWORD : password
+      MYSQL_ROOT_PASSWORD: password
   phpmyadmin: 
     image: phpmyadmin/phpmyadmin 
     environment: 
